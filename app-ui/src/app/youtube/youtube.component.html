@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let video of videos">
+      <p> {{ video.videoId }}</p>
+      <div>
+        <iframe  [src]="video.videoUrl"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- This is a comment -->
+<!--
+<div class="scrolling-wrapper">
+  <div *ngFor="let image of movies.credits.cast">
+    <div class="card" style="width: 18rem;">
+    <div class="bd-placeholder-img card-img-top" style="width: 18rem; height: 18rem; overflow: hidden;">
+      <img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + image.profile_path">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ image.original_name }}</h5>
+      <p class="card-text"> Date : {{ image.character }} </p>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+    <div class="card"><img style="width: 18rem;" [src]="'https://image.tmdb.org/t/p/w500/' + movies.credits.cast[0].profile_path"></div>
+-->
+
+<!--
+<div class="scrolling-wrapper-flexbox">
+  <div class="size" *ngFor="let image of movies.credits.cast">
+    <div class="card">
+    <div class="image">
+      <img [src]="'https://image.tmdb.org/t/p/w500/' + image.profile_path">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ image.original_name }}</h5>
+      <p class="card-text"> Date : {{ image.character }} </p>
+    </div>
+    </div>
+  </div>
+</div>
+-->

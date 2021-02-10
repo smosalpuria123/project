@@ -1,0 +1,47 @@
+<head>
+
+</head>
+
+
+<body>
+  <!---
+  <div>
+    <div class="background">
+      <input [(ngModel)]="movieTitle" class="search" />
+      <button class="btn btn-success search-btn"
+        (click)="onSearch()">Search</button>
+    </div>
+  </div>
+-->
+<section class="whole">
+  <div class="complete">
+    <div class="content">
+      <div class="headingp">
+        <p><b>Welcome...</b></p>
+      </div>
+      <div class="input-group mb-3">
+        <input [(ngModel)]="movieTitle" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+          <button class="btn btn-success" (click)="onSearch()">Search</button>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trendfile">
+  <div class="trendcycle">
+    <div class="scrolling-wrapper-flexbox">
+      <div class="cardsize" *ngFor="let trends of trend">
+        <div class="card">
+          <a class="cardheight" (click)="onmovie(trends.id)">
+            <img [src]="'https://image.tmdb.org/t/p/w500/' + trends.poster_path">
+          </a>
+          <p> <b>{{ trends.title }}</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
